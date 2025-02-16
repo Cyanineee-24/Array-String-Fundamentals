@@ -20,6 +20,7 @@ int main ()
 		
 		if (n == 0)
 		{
+			printf("Program Terminated.");
 			break;
 		}
 		
@@ -32,13 +33,14 @@ int main ()
 void question(int* n)
 {
 	int ans;
-	printf("Choose the function you'd like to implement on the strings: \n");
+	printf("\nChoose the function you'd like to implement on the strings: \n");
 	printf("[1]: reverseString\n");
 	printf("[2]: reverseStringPointers\n");
 	printf("[3]: countVowels\n");
 	printf("[4]: countConsonant\n");
 	printf("[5]: isPalindrome\n");
 	printf("[6]: isSubsequent\n");
+	printf("[0]: End.\n");
 	
 	scanf("%d", &ans);
 	while (getchar() != '\n');
@@ -191,8 +193,8 @@ void isSubsequent()
 	size_t len1 = strlen(str1);
 	size_t len2 = strlen(str2);
 	
-	int i, j;
-	for (i = 0; i<len1; i++)
+	int i=0, j=0;
+	for (i; i<len1; i++)
 	{
 		if (str1[i] == str2[j])
 		{
