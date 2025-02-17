@@ -23,6 +23,7 @@ int main ()
 			}
 			
 		operation(n);
+		printf("\n");
 		
 	} while (n!=0);
 	
