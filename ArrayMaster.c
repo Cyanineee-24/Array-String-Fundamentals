@@ -172,4 +172,3 @@ void deleteElementAtSpecificIndex()
 	printf("\nArray after update: ");
 	display(arr, size);
 }
-
